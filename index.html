@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Sum and Average</title>
+</head>
+<body>
+    <h1>Calculation of Sum & Average on user Input</h1>
+    <h3>Your Enter : <span id="userEnter"></span></h3>
+    <h3>Sum : <span id="sum"></span></h3>
+    <h3>Average : <span id="average"></span></h3>
+</body>
+<script>
+    //--------------------------------------------------------
+    // var x = prompt("What is the sum of 2 + 2");
+    // if(x == 4){
+    //     alert("correct");
+    // }
+    // else{
+    //     alert("Wrong");
+    // }
+
+    //---------------------------------------------------------
+    // var cities = ["A","B","C","D"];
+    // cities.splice(1,1,"E","F");
+    // alert(cities);
+
+    //---------------------------------------------------------
+    // var cleancity = ["America", "USA", "UAE", "Saudia"];
+    // var entercity = prompt("Enter cleanest city : ");
+    // let Isfound = false;
+    // for (i = 0; i < cleancity.length; i++) {
+    //     if (entercity === cleancity[i]) {
+    //         Isfound = true;
+    //         alert("Correct Answer");
+    //     }
+    // }
+    // if (Isfound === false) {
+    //     alert("Nikl");
+    // }
+
+    //1------------------------------------------------------------------------------
+    // var arr = [];
+    // for (i = 0; i < 10; i++) {
+    //     var enter = +prompt("Enter Number");
+    //     arr.push(enter);
+    // }
+    // console.log(arr);
+    // var add = arr[0]+arr[1]+arr[2]+arr[3]+arr[4]+arr[5]+arr[6]+arr[7]+arr[8]+arr[9];
+    // console.log(add);
+    // var average = add/10;
+    // console.log(average);
+
+    //1Correct--------------------------------------------------------------------
+    var arr = [];
+    let number = 0;
+    let sum = 0;
+    let avg;
+    for (i = 0; i < 10; i++) {
+        number = +prompt("Enter Number");
+        arr.push(number);
+        sum = sum + number;
+    }
+    document.getElementById("userEnter").innerHTML = arr;
+    document.getElementById("sum").innerHTML = sum;
+    avg = sum / 10;
+    document.getElementById("average").innerHTML = avg;
+</script>
+
+</html>
